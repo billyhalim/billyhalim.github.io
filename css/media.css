@@ -1,0 +1,140 @@
+@media only screen and (min-width: 1025px){
+.cover .large-10{
+	margin-top:90px;
+}
+.cover .large-10 h1{
+	font-size:4.7rem;
+	font-weight:600;
+	color:#ffffff;
+}
+.cover .large-10 p{
+	font-size:1.4rem;
+	color:#EEEEEE;
+}}
+
+@media only screen and (min-width: 641px) and (max-width:1024px){
+.cover .large-10{
+	margin-top:40px;
+}
+.cover .large-10 h1{
+	font-size:4.2rem;
+	font-weight:600;
+	color:#ffffff;
+}
+.cover .large-10 p{
+	font-size:1.25rem;
+	color:#EEEEEE;	
+}
+}
+
+@media only screen and (min-width:500px) and (max-width:640px){
+.cover .large-10{
+	margin-top:30px;
+}
+.cover .large-10 h1{
+	font-size:2.7rem;
+	font-weight:600;
+	color:#ffffff;
+}
+.cover .large-10 p{
+	font-size:1.1rem;
+	color:#EEEEEE;		
+}
+
+.cover{
+	height:560px;
+}
+
+.top-bar{
+	background-color:#006FFF;
+	padding-bottom:2.8rem;
+	padding-top:0.5rem;
+}
+
+.top-bar-section ul li {
+    background:none;
+	margin-right:0px;
+}
+
+.expanded{
+	background-color:#006FFF;
+	padding-bottom:0;
+	padding-top:0;
+}
+
+.label.edutitle{
+	font-size:1.5rem;
+	padding-right:50px;
+	padding-left:50px;
+}
+
+.sm{
+	width:50px;
+	height:50px;
+	margin-right:10px;
+}
+}
+
+@media only screen and (max-width:499px){
+.cover .large-10{
+	margin-top:0px;
+}
+.cover .large-10 h1{
+	font-size:2.5rem;
+	font-weight:600;
+	color:#ffffff;
+}
+.cover .large-10 p{
+	font-size:0.9rem;
+	color:#EEEEEE;		
+}
+.cover{
+	height:550px;
+}
+.top-bar{
+	background-color:#006FFF;
+	padding-bottom:2.8rem;
+	padding-top:0.5rem;
+}
+
+.top-bar-section ul li {
+    background:none;
+	margin-right:0px;
+}
+
+.expanded{
+	background-color:#006FFF;
+	padding-bottom:0;
+	padding-top:0;
+}
+
+.sm{
+	width:40px;
+	height:40px;
+	margin-right:0px;
+}
+
+.label.title{
+	font-size:1.2rem;
+	padding-right:30px;
+	padding-left:30px;
+}
+}
+
+@media only screen and (max-width:329px){
+.cover .large-10{
+	margin-top:0px;
+}
+.cover .large-10 h1{
+	font-size:2.0rem;
+	font-weight:600;
+	color:#ffffff;
+}
+.cover .large-10 p{
+	font-size:0.8rem;
+	color:#EEEEEE;		
+}
+.cover{
+	height:550px;
+}
+}
