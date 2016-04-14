@@ -1,150 +1,300 @@
-.row.portal{
+@font-face {
+    font-family: batman;
+    src: url(font/batman.ttf);
+}
+
+body{
+	margin-bottom:0;
+}
+
+ul{
+	line-height:1.4;
+}
+
+li{
+	margin-left:50px;
+}
+
+.propic{
+	border-radius:100px;
+	width:200px;
+	height:200px;
+}
+
+/* Cover */
+.row.cover{
+	max-width:100%;
+	height:700px;
+	background: -webkit-linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('img/cover.jpg') center center/cover no-repeat; /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('img/cover.jpg') center center/cover no-repeat; /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('img/cover.jpg') center center/cover no-repeat; /* For Firefox 3.6 to 15 */
+	background:linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('img/cover.jpg') center center/cover no-repeat fixed;
+	-webkit-transform: translate3d(0,0,0);
+}
+
+.header{
+	text-align:center;
+	float:none;
+	margin:0 auto;
+	padding-top:100px;
+}
+
+.header h1{
+	color:#ffffff;
+	font-family:batman;
+	font-size:4.5rem;
+	margin:0;
+}
+
+.header p{
+	color:#00FCFF;
+	font-family:Calibri;
+	font-size:1.5rem;
+}
+
+.row.social{
+	max-width:40rem;
+	margin:0 auto;
+}
+
+.row.social > .columns > a img{
+	width:50px;
+	height:50px;
+}
+
+p.textscroll{
+	color:#ffffff;
+	font-family:Calibri;
+	font-size:1.3rem;
+}
+/* Cover */
+
+/* Each Title */
+.row.title{
 	max-width:100%;
 }
 
-.label.title{
-	font-size:1.7rem;
-	border-bottom-right-radius:5px;
-	border-bottom-left-radius:5px;
-	padding:15px 30px;
-}
-
-.label.success {
-    background-color: #00FF0D;
-    color:#000000;
-}
-
-.label.warning{
-	background-color: #FFD516;
-	color:#000000;
-}
-
-.pro{
-	display:block;
-	margin:0 auto;
-	border-radius:5px;
-}
-
-.quote{
-	margin-top:20px;
-}
-
-.quote h3{
-	color:#F1F1F1;
-	padding-top:15px;
-	padding-bottom:25px;
-}
-
-.content{
-	margin-top:50px;
-	margin-bottom:20px;
-	border-radius:10px;
-	background-color:#ffffff;
-}
-
-.content h1{
-	color:#006FFF;
+.row.title > .titlename{
+	background-color:#FF9500;
 	text-align:center;
 }
 
-.content h4{
+.row.title > .titlename > h3{
+	font-size:2rem;
+	margin-top:10px;
+	font-family:batman;
 	color:#000000;
 }
+/* Each Title */
 
-.content h4.profile{
-	font-size:19px;
+
+/* Profile */
+.row.profile{
+	max-width:100%;
+	background: -webkit-linear-gradient( left, rgba(0, 120, 255, 0.7), rgba(0, 200, 255, 0.7), rgba(0, 120, 255, 0.7) ), url('img/laptop.jpg') center center/cover no-repeat; /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( right, rgba(0, 120, 255, 0.7), rgba(0, 200, 255, 0.7), rgba(0, 120, 255, 0.7) ), url('img/laptop.jpg') center center/cover no-repeat; /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient( right, rgba(0, 120, 255, 0.7), rgba(0, 200, 255, 0.7), rgba(0, 120, 255, 0.7) ), url('img/laptop.jpg') center center/cover no-repeat; /* For Firefox 3.6 to 15 */
+	background:linear-gradient( to right, rgba(0, 120, 255, 0.7), rgba(0, 200, 255, 0.7), rgba(0, 120, 255, 0.7) ), url('img/laptop.jpg') center center/cover no-repeat;
+	-webkit-transform: translate3d(0,0,0);
 }
 
-.content p{
-	color:#434343;
-	font-size:18px;
+.row.profile > .columns{
+	padding-top:20px;
+	padding-bottom:20px;
 }
 
-.langdiv{
-	margin-top:20px;
-	margin-bottom:20px;
+.row.profile > .columns > h3{
+	font-family:Calibri;
+	font-size:1.6rem;
+	margin:0;
+	color:#ffffff;
+}
+/* Profile */
+
+
+/* Education */
+.row.education{
+	max-width:100%;
+	background: -webkit-linear-gradient( rgba(0, 120, 255, 0.7), rgba(0, 200, 255, 0.7), rgba(0, 120, 255, 0.7) ), url('img/book.jpg') center center/cover no-repeat; /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( rgba(0, 120, 255, 0.7), rgba(0, 200, 255, 0.7), rgba(0, 120, 255, 0.7) ), url('img/book.jpg') center center/cover no-repeat; /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient( rgba(0, 120, 255, 0.7), rgba(0, 200, 255, 0.7), rgba(0, 120, 255, 0.7) ), url('img/book.jpg') center center/cover no-repeat; /* For Firefox 3.6 to 15 */
+	background:linear-gradient( rgba(0, 120, 255, 0.6), rgba(0, 200, 255, 0.6), rgba(0, 120, 255, 0.6) ), url('img/book.jpg') center center/cover no-repeat;
+	-webkit-transform: translate3d(0,0,0);
 }
 
-.langdiv h3{
-	color:#000000;
+.row.education > .columns{
+	padding-top:10px;
+	padding-bottom:10px;
+	float:none;
+	overflow:hidden;
+	margin:0px auto;
+}
+
+.row.education > .columns > .columns.image{
 	text-align:center;
 }
 
-.cover{
-   max-width:100%;
-   height:auto;
-   background-image:url("coding.jpg");
-   background-repeat:no-repeat;
-   background-size:100% 600px;
-   height:600px;
+.row.education > .columns > .columns > h3{
+	font-family:Calibri;
+	font-size:1.5rem;
+	margin:0;
+	color:#ffffff;
 }
 
-.sm{
-	width:65px;
-	height:65px;
-	margin-right:10px;
+.edupic{
+	width:180px;
+	height:150px;
+}
+/* Education */
+
+/* Skills */
+.row.skills{
+	max-width:100%;
+	background: -webkit-linear-gradient( left, rgba(0, 120, 255, 0.7), rgba(0, 200, 255, 0.7), rgba(0, 120, 255, 0.7) ), url('img/coding.jpg') center center/cover no-repeat; /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( right, rgba(0, 120, 255, 0.7), rgba(0, 200, 255, 0.7), rgba(0, 120, 255, 0.7) ), url('img/coding.jpg') center center/cover no-repeat; /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient( right, rgba(0, 120, 255, 0.7), rgba(0, 200, 255, 0.7), rgba(0, 120, 255, 0.7) ), url('img/coding.jpg') center center/cover no-repeat; /* For Firefox 3.6 to 15 */
+	background:linear-gradient( to right, rgba(0, 120, 255, 0.7), rgba(0, 200, 255, 0.7), rgba(0, 120, 255, 0.7) ), url('img/coding.jpg') center center/cover no-repeat;
+	-webkit-transform: translate3d(0,0,0);
 }
 
-.lang{
+.row.skills > .columns{
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+.row.skills > .columns > .columns{
+	padding-top:10px;
+	padding-bottom:10px;
+	text-align:center;
+}
+
+.row.skills > .columns > .columns > h3{
+	color:#ffffff;
+}
+
+.row.skills > .columns > .columns > img{
 	width:100px;
 	height:100px;
-	display:block;
-	margin:0 auto;
+}
+/* Skills */
+
+
+/* Project */
+.row.project{
+	max-width:100%;
+	background: -webkit-linear-gradient( left, rgba(0, 120, 255, 0.7), rgba(0, 200, 255, 0.7), rgba(0, 120, 255, 0.7) ), url('img/project.jpg') center center/cover no-repeat; /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( right, rgba(0, 120, 255, 0.7), rgba(0, 200, 255, 0.7), rgba(0, 120, 255, 0.7) ), url('img/project.jpg') center center/cover no-repeat; /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient( right, rgba(0, 120, 255, 0.7), rgba(0, 200, 255, 0.7), rgba(0, 120, 255, 0.7) ), url('img/project.jpg') center center/cover no-repeat; /* For Firefox 3.6 to 15 */
+	background:linear-gradient( to right, rgba(0, 120, 255, 0.7), rgba(0, 200, 255, 0.7), rgba(0, 120, 255, 0.7) ), url('img/project.jpg') center center/cover no-repeat;
+	-webkit-transform: translate3d(0,0,0);
 }
 
-.top-bar{
-	background-color:#006FFF;
-	padding-top:0.5rem;
-	padding-bottom:3.5rem;
-	transition: height 1s;
-	transition-timing-function:ease
+.row.project > .columns{
+	text-align:center;
+	margin-top:20px;
 }
 
-.top-bar-section li:not(.has-form) a:not(.button) { 
-	background-color: #006FFF;
-	font-size:0.9125rem;
+.row.project > .columns > h5{
+	color:#ffffff;
 }
 
-.top-bar-section li:not(.has-form) a:not(.button):hover {
-    background-color: #00E2FF;
-	color:#000000;
-	border-radius:3px;
-	background-image:none;
+.row.project > .columns > img{
+	width:420px;
+	height:300px;
+	border-radius:5px;
+}
+/* Project */
+
+/*  Media Queries Cover*/
+@media screen and (min-width:640px) and (max-width:1023px){
+.large-10.columns.header h1{
+	color:#ffffff;
+	font-family:batman;
+	font-size:4rem;
+	margin:0;
+}
+.large-10.columns.header{
+	text-align:center;
+	padding-top:80px;
+}}
+
+@media screen and (max-width:639px){
+.large-10.columns.header{
+	text-align:center;
+	padding-top:30px;
 }
 
-.top-bar-section ul li {
-    background:none; 
-	margin-right:10px;
+.large-10.columns.header h1{
+	color:#ffffff;
+	font-family:batman;
+	font-size:4rem;
+	margin:0;
 }
 
-.top-bar-section li.active:not(.has-form) a:not(.button) {
-	background-color: #00E2FF;
-	color:#000000;
-	border-radius:3px;
+.propic{
+	border-radius:80px;
+	width:160px;
+	height:160px;
 }
+}
+/*  Media Queries Cover*/
 
-.top-bar-section li.active:not(.has-form) a:not(.button):hover {
-    background-color: #00E2FF;
-	color:#000000;
-	border-radius:3px;
+/*  Media Queries Profile*/
+@media screen and (min-width:640px) and (max-width:1023px){
+.row.profile > .columns.pp{
+	text-align:center;
 }
+.row.profile > .columns > h3{
+	font-family:Calibri;
+	font-size:1.5rem;
+	margin:0;
+	color:#ffffff;
+}}
 
-.top-bar.expanded{
-	height:285px;
+@media screen and (max-width:639px){
+.row.profile > .columns > h3{
+	font-family:Calibri;
+	font-size:1.2rem;
+	margin:0;
+	color:#ffffff;
 }
+.row.profile > .columns.pp{
+	text-align:center;
+}}
+/*  Media Queries Profile*/
 
-.top-bar.expanded .title-area {
-    background-color: #006FFF; 
+/*  Media Queries Education*/
+@media screen and (min-width:640px) and (max-width:1023px){
+.row.education > .columns > .columns > h3{
+	font-family:Calibri;
+	font-size:1.4rem;
+	margin:0;
+	color:#ffffff;
 }
+.sutpic, .usupic{
+	border-radius:5px;
+	width:150px;
+	height:150px;
+}}
 
-.top-bar.expanded .toggle-topbar a {
-    color: #ffffff; 
+@media screen and (max-width:639px){
+.row.education > .columns > .columns > h3{
+	font-family:Calibri;
+	font-size:1.2rem;
+	margin:0;
+	color:#ffffff;
 }
+.sutpic, .usupic{
+	border-radius:5px;
+	width:150px;
+	height:150px;
+}}
+/*  Media Queries Education*/
 
-.top-bar .title-area {
-  position: relative;
-  z-index: 1;  
-}
-.top-bar-section > ul {
-  z-index: 0;
-}
+/*  Media Queries Skills*/
+@media screen and (max-width:639px){
+.row.skills > .columns > .columns > .skill{
+	width:120px;
+	height:120px;
+}}
+/*  Media Queries Skills*/
