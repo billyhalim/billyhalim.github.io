@@ -1,222 +1,478 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
 <head>
 	<title>BILLY HALIM</title>
 	<meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/foundation.min.css" />
-    <link rel="stylesheet" href="css/app.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="My name is Billy Halim. I am an Intermediate Front-End Web Developer and a Computer Science student at University of North Sumatra.">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/loaders.css/0.1.2/loaders.min.css" rel="stylesheet" type="text/css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation-flex.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.1.1/motion-ui.min.css" />
+	<link href="https://cdn.jsdelivr.net/foundation-icons/3.0/foundation-icons.min.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet" type="text/css">
+	<link href="app.css" rel="stylesheet" type="text/css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/3.2.0/scrollreveal.min.js"></script>
+	<script>
+		window.sr = ScrollReveal({duration:1000, scale:1});
+		if (sr.isSupported()) {
+			document.documentElement.classList.add('sr');
+		}
+	</script>
 </head>
 <body>
 
-<div class="row cover">
-	<div class="small-12 medium-12 large-10 columns header">
-		<img src="css/img/a.jpg" class="propic">
-		<h1>BILLY HALIM</h1>
-		<p>A Front-End Web Developer and A student at University of Sumatera Utara</p>
-		<div class="row social">
-			<div class="small-3 medium-3 large-3 columns">
-				<a href="https://www.facebook.com/profile.php?id=100000317696274"><img src="css/img/social/facebook.svg"></a>
+<div id="loader" class="row align-center align-middle">
+	<div class="loader-inner line-scale-pulse-out">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>&nbsp;&nbsp;
+	<h4>Please Wait</h4>
+</div>
+
+<div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+	<button class="menu-icon" type="button" data-toggle></button>
+	<div class="title-bar-title">Menu</div>
+</div>
+
+<div class="top-bar" id="example-menu">
+	<div class="top-bar-left" data-magellan data-animation-duration="1000">
+		<ul class="dropdown vertical medium-horizontal menu" data-dropdown-menu>
+			<li><a href="#bio">Bio</a></li>
+			<li><a href="#edu">Education</a></li>
+			<li><a href="#ski">Skills</a></li>
+			<li><a href="#proj">Projects</a></li>
+			<li><a href="#res">Resources</a></li>
+			<li><a href="#q">Quotes</a></li>
+			<li><a href="#con">Contact</a></li>
+		</ul>
+	</div>
+</div>		
+		
+<div class="row cover align-center align-middle">
+	<div class="small-12 medium-12 large-12 column header">
+		<div class="row align-center">
+			<div class="small-12 medium-4 large-3 column header-pic">
+				<img src="http://res.cloudinary.com/billyhalim/image/upload/v1468989503/Billy%20Halim/me.jpg" class="picture">
 			</div>
-			
-			<div class="small-3 medium-3 large-3 columns">
-				<a href="http://www.twitter.com/Billy_Halim"><img src="css/img/social/twitter.svg"></a>
+			<div class="small-12 medium-8 large-6 column header-title">
+				<h1 class="name">BILLY HALIM</h1>
+				<span class="tagline"></span>
 			</div>
-			
-			<div class="small-3 medium-3 large-3 columns">
-				<a href="https://plus.google.com/u/0/109378973494077255924"><img src="css/img/social/googleplus.svg"></a>
+			<div class="large-12 column tac fmam" style="margin-top:20px;" data-magellan data-animation-duration="1000">
+				<a class="warning large button" href="#bio">Find More About Me</a>
 			</div>
-			
-			<div class="small-3 medium-3 large-3 columns">
-				<a href="http://www.pinterest.com/billyhalim"><img src="css/img/social/pinterest.svg">
-			</div></a>
-		</div>
-		<div class="row social" style="margin:10px auto">
-			<div class="small-3 medium-3 large-3 columns">
-				<a href="http://stackoverflow.com/users/4620259/billy-halim"><img src="css/img/social/stackoverflow.png"></a>
-			</div>
-			
-			<div class="small-3 medium-3 large-3 columns">
-				<a href="https://medium.com/@billyhalim"><img src="css/img/social/medium.png"></a>
-			</div>
-			
-			<div class="small-3 medium-3 large-3 columns">
-				<a href="https://www.quora.com/profile/Billy-Halim-2"><img src="css/img/social/quora.png"></a>
-			</div>
-			
-			<div class="small-3 medium-3 large-3 columns">
-				<a href="http://codepen.io/billyhalim/"><img src="css/img/social/codepen.png"></a>
-			</div>
-		</div>
-		<p class="textscroll">Line ID : billy_halim</p>
-		<p class="textscroll">My Blog : <a href="www.billyhalim.xyz">www.billyhalim.xyz</a></p>
+		</div> 
 	</div>
 </div>
 
-<div class="row title">
-	<div class="large-12 columns titlename">
-		<h3>SHORT BIO</h3>
+<div class="row align-center" id="bio" data-magellan-target="bio">
+	<h3 class="title"> SHORT BIOGRAPHY <hr></h3>
+	<div class="small-11 medium-11 large-11 column">
+		<p class="about">Hello, my name is Billy Halim. I am 18 years old. I born on September 25, 1997 in Medan, North Sumatra, Indonesia. My nationality is Indonesian. Now, I live in Medan. I am the first child of 2 brothers and 1 sister in my family. I am an alumni of Sutomo 1, a school in Medan. Now, I am a Computer Science student at University of Sumatera Utara, Indonesia. I take Computer Science degree in University because I have been interested in Computer Science field especially Web Development and a little bit on Mobile Apps Development since the early of 2015. I currently focus on Front-End Web Development which I am responsible to create the user interface of a website. There is still no planning for me to move to Back-End Web Development. My goal is to become a Full-Stack Web Developer. I also like reading, writing, and get updated to stuff related to technology.</p>
 	</div>
 </div>
 
-<div class="row profile">
-	<div class="small-12 medium-12 large-10 large-centered columns">
-		<h3>Hello, My name is Billy Halim, 18 years old, born in Medan, North Sumatra, Indonesia. I am a front-end web developer and a Computer Science student at University of Sumatra Utara. My hobby is coding. I am interested in Web Development since I like blogging and modifying template using Blogger. Everyday I'm dealing with HTML, CSS, and currently learning JavaScript deeply and Node.js for back-end. Beside that, I am also learning web frameworks like Bootstrap, Foundation, and AngularJS. The tools that I have ever used are Notepad++, Sublime Text, Brackets, XAMPP, GitHub, Wordpress.org, Wordpress.com, and Blogger.</h3>
-	</div>
-</div>
-
-<div class="row title">
-	<div class="large-12 columns titlename">
-		<h3>EDUCATION</h3>
-	</div>
-</div>
-
-<div class="row education">
-  <div class="small-12 medium-12 large-10 columns">
-	<div class="small-12 medium-3 large-2 columns image">
-		<img src="css/img/sutomo.png" class="edupic">
-	</div>
-	<div class="small-12 medium-9 large-10 columns">
-		<h3>
-			<ul>Sutomo 1 Medan
-				<li>Kindergarden       : PG/TK Sutomo 1 Medan</li>
-				<li>Primary School     : SD Sutomo 1 Medan</li>
-				<li>Junior High School : SMP Sutomo 1 Medan</li>
-				<li>Senior High School : SMA Sutomo 1 Medan</li>
-			</ul>
-		</h3>
-	</div>
-  </div>
- 
-
-  <div class="small-12 medium-12 large-10 columns">
-	<div class="small-12 medium-3 large-2 columns image">
-		<img src="css/img/usu.png" class="edupic">
-	</div>
-	<div class="small-12 medium-9 large-10 columns">
-		<h3>
-			<ul>University of Sumatera Utara
-				<li>Faculty of Computer Science and Information Technology</li>
-				<li>Computer Science degree</li>
-				<li>2nd Semester</li>
-				<li>2015</li>
-			</ul>
-		</h3>
-	</div>
-  </div>
-</div>
-
-<div class="row title">
-	<div class="large-12 columns titlename">
-		<h3>SKILLS</h3>
-	</div>
-</div>
-
-<div class="row skills">
-  <div class="small-12 medium-12 large-12 columns">
-		<div class="small-12 medium-4 large-4 columns">
-			<img src="css/img/skills/html5.svg">
-			<h3>HTML</h3>
-			<div class="success progress">
-				<div class="progress-meter" style="width: 50%"></div>
+<div class="row edu align-center" id="edu" data-magellan-target="edu">
+	<h3 class="title" style="color:#ffffff;"> EDUCATION <hr></h3>
+	<div class="small-12 medium-12 large-12 column tac" style="color:#ffffff;">
+		<div class="row">
+			<div class="small-12 medium-12 large-6 column">
+				<img src="http://res.cloudinary.com/billyhalim/image/upload/v1468989513/Billy%20Halim/sutomo.png" class="edupic">
+				<p class="schoolname">Sutomo 1<br><small>Medan, North Sumatra, Indonesia</small><br><small>2001 - 2015</small></p>
+				<div class="row" style="margin-top:20px;">
+					<div class="small-12 medium-6 large-6 column edudetail">
+						<h5>Senior High School</h5>
+						<p class="edudet">SMA Sutomo 1 Medan<br> Science Degree <br> 2012 - 2015</p>
+					</div>
+					<div class="small-12 medium-6 large-6 column edudetail">
+						<h5>Junior High School</h5>
+						<p class="edudet">SMP Sutomo 1 Medan<br> 2009 - 2012</p>
+					</div>
+					<div class="small-12 medium-6 large-6 column edudetail ">
+						<h5>Primary School</h5>
+						<p class="edudet">SD Sutomo 1 Medan<br> 2003 - 2009</p>
+					</div>
+					<div class="small-12 medium-6 large-6 column edudetail">
+						<h5>Kindergarden</h5>
+						<p class="edudet">PG/TK Sutomo 1 Medan<br> 2001 - 2003</p>
+					</div>
+				</div>
+			</div>
+			<div class="small-12 medium-12 large-6 column">
+				<img src="http://res.cloudinary.com/billyhalim/image/upload/v1468989524/Billy%20Halim/usu.png" class="edupic">
+				<p class="schoolname">University of North Sumatra<br><small>Medan, North Sumatra, Indonesia</small><br><small>2015 - Present</small></p>
+				<div class="row" style="margin-top:20px;">
+					<div class="small-12 medium-4 large-12 column edudetail">
+						<h5>Faculty</h5>
+						<p class="edudet">Faculty of Computer Science &amp; Information Technology</p>
+					</div>
+					<div class="small-12 medium-4 large-12 column edudetail">
+						<h5>Degree</h5>
+						<p class="edudet">Computer Science</p>
+					</div>
+					<div class="small-12 medium-4 large-12 column edudetail">
+						<h5>Grade</h5>
+						<p class="edudet">2nd Semester</p>
+					</div>
+				</div>
 			</div>
 		</div>
-		<div class="small-12 medium-4 large-4 columns">
-			<img src="css/img/skills/css3.svg">
-			<h3>CSS</h3>
-			<div class="success progress">
-				<div class="progress-meter" style="width: 60%"></div>
-			</div>
-		</div>
-		<div class="small-12 medium-4 large-4 columns">
-			<img src="css/img/skills/js.png">
-			<h3>JavaScript</h3>
-			<div class="success progress">
-				<div class="progress-meter" style="width: 20%"></div>
-			</div>
-		</div>
-  </div>
-  <div class="small-12 medium-12 large-12 columns">
-		<div class="small-12 medium-4 large-4 columns">
-			<img src="css/img/skills/angular.png">
-			<h3>AngularJS</h3>
-			<div class="success progress">
-				<div class="progress-meter" style="width: 20%"></div>
-			</div>
-		</div>
-		<div class="small-12 medium-4 large-4 columns">
-			<img src="css/img/skills/bootstrap.png">
-			<h3>Bootstrap</h3>
-			<div class="success progress">
-				<div class="progress-meter" style="width: 50%"></div>
-			</div>
-		</div>
-		<div class="small-12 medium-4 large-4 columns">
-			<img src="css/img/skills/foundation.png">
-			<h3>Foundation</h3>
-			<div class="success progress">
-				<div class="progress-meter" style="width: 20%"></div>
-			</div>
-		</div>
-  </div>
-  <div class="small-12 medium-12 large-12 columns">
-		<div class="small-12 medium-4 large-4 columns">
-			<img src="css/img/skills/wordpress.png">
-			<h3>Wordpress</h3>
-			<div class="success progress">
-				<div class="progress-meter" style="width: 80%"></div>
-			</div>
-		</div>
-		<div class="small-12 medium-4 large-4 columns end">
-			<img src="css/img/skills/blogger.svg">
-			<h3>Blogger</h3>
-			<div class="success progress">
-				<div class="progress-meter" style="width: 80%"></div>
-			</div>
-		</div>
-  </div>
-</div>
-
-<div class="row title">
-	<div class="large-12 columns titlename">
-		<h3>PROJECT</h3>
 	</div>
 </div>
 
-<div class="row project">
-	<div class="small-12 medium-12 large-4 columns">
-		<img src="css/img/todolist.png">
-		<h5>EasyLister - A Todo List App Built with AngularJS 1.x</h5>
-		<a href="http://billyhalim.github.io/EasyLister"><button class="large warning button">Demo</button></a>
-		<a href="http://github.com/billyhalim/EasyLister"><button class="large success button" >Source Code</button></a>
+<div class="row skill align-center" id="ski" data-magellan-target="ski">
+	<h3 class="title"> SKILLS <hr></h3>
+	<div class="small-12 medium-12 large-12 column tac">
+		<p>The things I can do and I am currently learning</p>
+		<div class="row align-center">
+			<div class="small-12 medium-4 large-3 column skillpar">
+				<img src="http://res.cloudinary.com/billyhalim/image/upload/v1468989491/Billy%20Halim/code.png" class="skicon">
+				<h5>Web Development</h5>
+				<p>I can create presentable user interface and engaging user experience of a website.</p>
+			</div>
+			<div class="small-12 medium-4 large-3 column skillpar">
+				<img src="http://res.cloudinary.com/billyhalim/image/upload/v1468989493/Billy%20Halim/design.png" class="skicon">
+				<h5>Web Design</h5>
+				<p>I can create a mockup of a website using Adobe Photoshop and convert it to a final result (HTML &amp; CSS).</p>
+			</div>
+			<div class="small-12 medium-4 large-3 column skillpar">
+				<img src="http://res.cloudinary.com/billyhalim/image/upload/v1468989509/Billy%20Halim/write.png" class="skicon">
+				<h5>Writing</h5>
+				<p>I like blogging and I can write articles mostly about technology, programming, and product reviews.</p>
+			</div>
+		</div>
 	</div>
-		<div class="small-12 medium-12 large-4 columns">
-		<img src="css/img/neptunegs.jpg">
-		<h5>NeptuneGS - A Simple Responsive Grid System</h5>
-		<a href="http://billyhalim.github.io/NeptuneGS"><button class="large alert button">Official Site</button></a>
-		<a href="http://github.com/billyhalim/NeptuneGS"><button class="large success button" >Source Code</button></a>
-	</div>
-	<div class="small-12 medium-12 large-4 columns end">
-		<img src="css/img/delihashmedan.jpg">
-		<h5>DeliHashMedan</h5>
-		<a href="http://delihashmedan.com"><button class="large warning button">Demo</button></a>
+	<div class="small-12 medium-12 large-8 column tac">
+		<div class="row align-spaced">
+			<div class="small-10 medium-5 large-5 column skilled primary">
+				<div></div>
+				<span class="label">Languages</span>
+				<div class="small-12 medium-12 large-12 column" style="padding-top:10px">
+					<h5>HTML/HTML5</h5>
+					<div class="progress" role="progressbar" tabindex="0" aria-valuenow="20" aria-valuemin="0" aria-valuetext="50 percent" aria-valuemax="100">
+						<span class="progress-meter" style="width: 60%">
+							<p class="progress-meter-text">60%</p>
+						</span>
+					</div>
+				</div>
+				<div class="small-12 medium-12 large-12 column">
+					<h5>CSS/CSS3</h5>
+					<div class="progress" role="progressbar" tabindex="0" aria-valuenow="20" aria-valuemin="0" aria-valuetext="70 percent" aria-valuemax="100">
+						<span class="progress-meter" style="width: 80%">
+							<p class="progress-meter-text">80%</p>
+						</span>
+					</div>
+				</div>
+				<div class="small-12 medium-12 large-12 column">
+					<h5>JavaScript</h5>
+					<div class="progress" role="progressbar" tabindex="0" aria-valuenow="20" aria-valuemin="0" aria-valuetext="40 percent" aria-valuemax="100">
+						<span class="progress-meter" style="width: 40%">
+							<p class="progress-meter-text">40%</p>
+						</span>
+					</div>
+				</div>
+				<div class="small-12 medium-12 large-12 column">
+					<h5>Sass</h5>
+					<div class="progress" role="progressbar" tabindex="0" aria-valuenow="20" aria-valuemin="0" aria-valuetext="30 percent" aria-valuemax="100">
+						<span class="progress-meter" style="width: 30%">
+							<p class="progress-meter-text">30%</p>
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="small-10 medium-5 large-5 column skilled success">
+				<span class="success label">Frameworks &amp; Libraries</span>
+				<div class="small-12 medium-12 large-12 column" style="padding-top:10px">
+					<h5>Bootstrap</h5>
+					<div class="success progress" role="progressbar" tabindex="0" aria-valuenow="20" aria-valuemin="0" aria-valuetext="70 percent" aria-valuemax="100">
+						<span class="progress-meter" style="width: 80%">
+							<p class="progress-meter-text">80%</p>
+						</span>
+					</div>
+				</div>
+				<div class="small-12 medium-12 large-12 column">
+					<h5>Zurb Foundation</h5>
+					<div class="success progress" role="progressbar" tabindex="0" aria-valuenow="20" aria-valuemin="0" aria-valuetext="50 percent" aria-valuemax="100">
+						<span class="progress-meter" style="width: 50%">
+							<p class="progress-meter-text">50%</p>
+						</span>
+					</div>
+				</div>
+				<div class="small-12 medium-12 large-12 column">
+					<h5>JQuery</h5>
+					<div class="success progress" role="progressbar" tabindex="0" aria-valuenow="20" aria-valuemin="0" aria-valuetext="40 percent" aria-valuemax="100">
+						<span class="progress-meter" style="width: 20%">
+							<p class="progress-meter-text">20%</p>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row align-spaced">
+			<div class="small-10 medium-5 large-5 column skilled warning">
+				<span class="warning label">Platform</span>
+				<div class="small-12 medium-12 large-12 column" style="padding-top:10px">
+					<h5>Blogger</h5>
+					<div class="warning progress" role="progressbar" tabindex="0" aria-valuenow="20" aria-valuemin="0" aria-valuetext="60 percent" aria-valuemax="100">
+						<span class="progress-meter" style="width: 60%">
+							<p class="progress-meter-text">60%</p>
+						</span>
+					</div>
+				</div>
+				<div class="small-12 medium-12 large-12 column">
+					<h5>Wordpress</h5>
+					<div class="warning progress" role="progressbar" tabindex="0" aria-valuenow="20" aria-valuemin="0" aria-valuetext="50 percent" aria-valuemax="100">
+						<span class="progress-meter" style="width: 50%">
+							<p class="progress-meter-text">50%</p>
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="small-10 medium-5 large-5 column skilled alert">
+				<span class="alert label">Software</span>
+				<div class="small-12 medium-12 large-12 column" style="padding-top:10px">
+					<h5>Microsoft Office</h5>
+					<div class="alert progress" role="progressbar" tabindex="0" aria-valuenow="20" aria-valuemin="0" aria-valuetext="85 percent" aria-valuemax="100">
+						<span class="progress-meter" style="width: 65%">
+							<p class="progress-meter-text">65%</p>
+						</span>
+					</div>
+				</div>
+				<div class="small-12 medium-12 large-12 column">
+					<h5>Adobe Photoshop</h5>
+					<div class="alert progress" role="progressbar" tabindex="0" aria-valuenow="20" aria-valuemin="0" aria-valuetext="40 percent" aria-valuemax="100">
+						<span class="progress-meter" style="width: 40%">
+							<p class="progress-meter-text">40%</p>
+						</span>
+					</div>
+				</div>
+				<div class="small-12 medium-12 large-12 column">
+					<h5>Windows Movie Maker</h5>
+					<div class="alert progress" role="progressbar" tabindex="0" aria-valuenow="20" aria-valuemin="0" aria-valuetext="50 percent" aria-valuemax="100">
+						<span class="progress-meter" style="width: 50%">
+							<p class="progress-meter-text">50%</p>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
 
-<div class="row title">
-	<div class="large-12 columns titlename" style="background-color:#000000">
-		<h3 style="color:#ffffff">Copyright &copy; 2016 - Billy Halim</h3>
+<div class="row project align-center" id="proj" data-magellan-target="proj">
+	<h3 class="title" style="color:#ffffff;"> PROJECTS <hr></h3>
+	<div class="small-12 medium-12 large-12 column tac" style="color:#ffffff;">
+		<p>List of Projects I have completed</p>
+		<div class="row" style="margin-top:15px;">
+			<div class="small-12 medium-6 large-4 column projpar">
+				<a data-toggle="projpar1">
+					<div class="projpar-img">
+						<div class="projcon-hover">
+							<p>Click to Enlarge Image</p>
+						</div>
+						<img src="http://res.cloudinary.com/billyhalim/image/upload/v1468989531/Billy%20Halim/dhm.png" class="projcon">
+					</div>
+				</a>
+				<div class="full reveal" id="projpar1" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+				  <img src="http://res.cloudinary.com/billyhalim/image/upload/v1468989531/Billy%20Halim/dhm.png" class="projcon-full">
+				  <button class="close-button" data-close aria-label="Close reveal" type="button">
+					<span aria-hidden="true">&times;</span>
+				  </button>
+				</div>
+				<h4>Deli Hash Medan</h4>
+				<p>Organization Profile, Client Project</p>
+				<a class="warning button" href="http://delihashmedan.com">Visit Site</a>
+			</div>
+			<div class="small-12 medium-6 large-4 column projpar">
+				<a data-toggle="projpar2">
+					<div class="projpar-img">
+						<div class="projcon-hover">
+							<p>Click to Enlarge Image</p>
+						</div>
+						<img src="http://res.cloudinary.com/billyhalim/image/upload/v1468989523/Billy%20Halim/moccax.png" class="projcon">
+					</div>
+				</a>
+				<div class="full reveal" id="projpar2" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+				  <img src="http://res.cloudinary.com/billyhalim/image/upload/v1468989523/Billy%20Halim/moccax.png" class="projcon-full">
+				  <button class="close-button" data-close aria-label="Close reveal" type="button">
+					<span aria-hidden="true">&times;</span>
+				  </button>
+				</div>
+				<h4>MoccaX</h4>
+				<p>The K-POP Video Platform, College Project</p>
+			</div>
+			<div class="small-12 medium-6 large-4 column projpar">
+				<a data-toggle="projpar3">
+					<div class="projpar-img">
+						<div class="projcon-hover">
+							<p>Click to Enlarge Image</p>
+						</div>
+						<img src="http://res.cloudinary.com/billyhalim/image/upload/v1468989535/Billy%20Halim/medaners.png" class="projcon">
+					</div>
+				</a>
+				<div class="full reveal" id="projpar3" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+				  <img src="http://res.cloudinary.com/billyhalim/image/upload/v1468989535/Billy%20Halim/medaners.png" class="projcon-full">
+				  <button class="close-button" data-close aria-label="Close reveal" type="button">
+					<span aria-hidden="true">&times;</span>
+				  </button>
+				</div>
+				<h4>Medaners</h4>
+				<p>The Travel Guide in Medan, College Project</p>
+			</div>
+		</div>
 	</div>
 </div>
 
+<div class="row align-center" id="res" data-magellan-target="res">
+	<h3 class="title"> RESOURCES <hr></h3>
+	<div class="small-12 medium-12 large-12 column tac">
+		<p>My Collection of Useful &amp; High Quality Infographics</p>
+		<div class="row" style="text-align:center">
+			<div class="small-12 medium-12 large-4 column respar">
+				<a data-pin-do="embedBoard" data-pin-board-width="500" data-pin-scale-height="400" data-pin-scale-width="500" href="https://id.pinterest.com/billyhalim/infographic-computer-science/"></a>
+			</div>
+			<div class="small-12 medium-12 large-4 column respar">
+				<a data-pin-do="embedBoard" data-pin-board-width="500" data-pin-scale-height="400" data-pin-scale-width="500" href="https://id.pinterest.com/billyhalim/infographic-business/"></a>
+			</div>
+			<div class="small-12 medium-12 large-4 column respar">
+				<a data-pin-do="embedBoard" data-pin-board-width="500" data-pin-scale-height="400" data-pin-scale-width="500" href="https://id.pinterest.com/billyhalim/infographic-science/"></a>
+			</div>
+		</div>
+	</div>
+</div>
 
-	<script src="js/jquery.min.js"></script>
-	<script src="js/foundation.min.js"></script>
-	<script src="js/app.js"></script>
-	<script type="text/javascript">
-(function(d,s,id){var z=d.createElement(s);z.type="text/javascript";z.id=id;z.async=true;z.src="//static.zotabox.com/f/c/fcab4639f8a61abedf6f9e064fa43b64/widgets.js";var sz=d.getElementsByTagName(s)[0];sz.parentNode.insertBefore(z,sz)}(document,"script","zb-embed-code"));
-</script>
+<div class="row quotebar align-center" id="q" data-magellan-target="q">
+	<div class="small-12 medium-12 large-12 column tac">
+		<div class="row align-center" style="color:#ffffff;">
+			<div class="orbit" role="region" aria-label="The Quote" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out; pauseOnHover:false; timerDelay:3000;">
+				  <ul class="orbit-container">
+					<button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+					<button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+					<li class="is-active orbit-slide" style="background-color:#FF001A">
+						<p class="quote">Move Fast and Break Things. Unless You are Breaking Stuff, You are Not Moving Fast Enough</p>
+						<h4>Mark Zuckerberg, <small>Founder &amp; CEO of Facebook, Inc.</small></h4>
+					</li>
+					<li class="orbit-slide" style="background-color:#C400FF">
+						<p class="quote">Today is Cruel. Tomorrow is Crueller. And the Day After Tomorrow is Beautiful</p>
+						<h4>Jack Ma, <small>Founder &amp; CEO of Alibaba</small></h4>
+					</li>
+					<li class="orbit-slide" style="background-color:#0037FF">
+						<p class="quote">Your Time is Limited. Don't Waste It Living Someone's Else Life</p>
+						<h4>Steve Jobs, <small>Founder of Apple Corporation.</small></h4>
+					</li>
+					<li class="orbit-slide" style="background-color:#FF7700">
+						<p class="quote">Always Deliver More Than Expected</p>
+						<h4>Larry Page, <small>Founder &amp; CEO of Google &amp; Alphabet, Inc.</small></h4>
+					</li>
+					<li class="orbit-slide" style="background-color:#FF0084">
+						<p class="quote">We only Wanted to Do One Thing, and Do That Really Well</p>
+						<h4>Jan Koum, <small>Founder &amp; CEO of Whatsapp, Inc.</small></h4>
+					</li>
+					<li class="orbit-slide" style="background-color:#00ABFF">
+						<p class="quote">You Have to Be Willing to Be Misunderstood If You're Going to Innovate</p>
+						<h4>Jeff Bezos, <small>Founder &amp; CEO of Amazon.com, Inc.</small></h4>
+					</li>
+					<li class="orbit-slide" style="background-color:#212121">
+						<p class="quote">Solving Big Problems is Easier than Solving Smaller Problems</p>
+						<h4>Sergey Brin, <small>Founder of Google, Inc. &amp; Alphabet, Inc.</small></h4>
+					</li>
+				  </ul>
+			</div>
+		</div>
+	</div>
+</div>
 
+<div class="row video align-center" id="video" data-magellan-target="video">
+	<div class="small-12 medium-12 large-12 column">
+		<div class="row">
+			<iframe class="youtube" src="https://www.youtube.com/embed/6SuFGpYQt0E?rel=0&modestbranding=1" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</div>
+</div>
+
+<div class="row contact align-center" id="con" data-magellan-target="con">
+	<div class="small-12 medium-12 large-12 column" style="margin-top:30px;">
+		<div class="row align-center">
+			<div class="small-6 medium-3 large-2 column">
+				<a href="https://www.facebook.com/billyhalim25"><i class="fi-social-facebook conicon"></i><p class="contitle">Facebook</p></a>
+			</div>
+			<div class="small-6 medium-3 large-2 column">
+				<a href="https://twitter.com/Billy_Halim"><i class="fi-social-twitter conicon"></i><p class="contitle">Twitter</p></a>
+			</div>
+			<div class="small-6 medium-3 large-2 column">
+				<a href="https://plus.google.com/u/0/109378973494077255924"><i class="fi-social-google-plus conicon"></i><p class="contitle">Google+</p></a>
+			</div>
+		</div>
+		<div class="row align-center">
+			<div class="small-6 medium-3 large-2 column">
+				<a href="https://id.pinterest.com/billyhalim/"><i class="fi-social-pinterest conicon"></i><p class="contitle">Pinterest</p></a>
+			</div>
+			<div class="small-6 medium-3 large-2 column">
+				<a href="https://www.linkedin.com/in/billyhalim"><i class="fi-social-linkedin conicon"></i><p class="contitle">Linkedin</p></a>
+			</div>
+			<div class="small-6 medium-3 large-2 column">
+				<a href="https://medium.com/@billyhalim"><i class="fi-social-medium conicon"></i><p class="contitle">Medium</p></a>
+			</div>
+		</div>
+		<div class="row align-center">
+			<div class="small-6 medium-3 large-2 column">
+				<a href="https://www.reddit.com/user/bele25/"><i class="fi-social-reddit conicon"></i><p class="contitle">Reddit</p></a>
+			</div>
+			<div class="small-6 medium-3 large-2 column">
+				<a href="http://stackoverflow.com/users/4620259/billy-halim"><i class="fi-social-stack-overflow conicon"></i><p class="contitle">Stack Overflow</p></a>
+			</div>
+			<div class="small-6 medium-3 large-2 column">
+				<a href="https://github.com/billyhalim"><i class="fi-social-github conicon"></i><p class="contitle">GitHub</p></a>
+			</div>
+		</div>
+		<div class="row align-center">
+			<div class="small-12 medium-4 large-3 column">
+				<i class="fi-mail conicon"></i><p class="contitle">billyhalim1997@hotmail.com</p>
+			</div>
+		</div>
+		<div class="row align-center">
+			<div class="small-12 medium-4 large-3 column">
+				<a href="https://www.quora.com/profile/Billy-Halim-2"><img src="http://res.cloudinary.com/billyhalim/image/upload/v1468989498/Billy%20Halim/quora.png" class="quora-icon"> &nbsp;<p class="contitle" style="display:inline-block">Quora</p></a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row align-center">
+	<div class="small-12 medium-12 large-12 column copyright">
+		<p style="margin:0; padding:10px 0px;">Copyright &copy; 2016 - Created &amp; Designed by <a href="http://billyhalim.github.io">Billy Halim</a>. Built with <a href="http://foundation.zurb.com">Zurb Foundation</a>.</p>
+	</div>
+</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.4/typed.min.js"></script>
+	<script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+	<script>
+		$(document).foundation();
+		$(window).load(function(){
+			$('#loader').fadeOut();
+			$('body').css({'overflow' : 'auto'});
+			$('.tagline').typed({
+				strings: ['I am an Intermediate Front-End Web Developer^500, Computer Science student^500, JavaScript Enthusiast^500, Blogger^500, Twitter and Quora addict^500, Redditor^500, Horror movies lover.'],
+				showCursor:false
+			});
+			sr.reveal('.header-pic, .name', {origin:'left', distance:'50px'});
+			sr.reveal('.tagline, .fmam');
+			sr.reveal('.title');
+			sr.reveal('.about, .contitle', {delay:500});
+			sr.reveal('.edupic, .schoolname, .edudetail', {distance:'100px'});
+			sr.reveal('.skilled.primary, .skilled.warning, .skilled.success, .skilled.alert', {origin:'left', delay:500, distance:'100px'});
+			sr.reveal('.quotebar', {delay:500, scale:0.8});
+			sr.reveal('.skillpar, .projpar', {distance:'100px'});
+			sr.reveal('.conicon', {distance:'100px'}, 100);
+			sr.reveal('.respar, .quora-icon', {origin:'left'});
+		});
+
+	</script>
 </body>
 </html>

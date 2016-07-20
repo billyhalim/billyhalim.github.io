@@ -1,0 +1,399 @@
+@font-face{
+	font-family: robotolight;
+	src: url('font/robotolight.ttf');
+}
+body{
+	overflow:hidden;
+}
+/* Preloader */
+#loader{
+	position:fixed; 
+	background:#252525; 
+	width:100%; 
+	height:100%; 
+	z-index:10;
+	opacity:1;
+	transition:opacity 1s linear;
+	color:#ffffff;
+	overflow:hidden;
+}
+/* Preloader */
+
+/* Visibility Hidden */
+.header, .title, .schoolname, .about, .edupic, .edudetail, .skillpar, .quotebar, .skilled.primary, .skilled.success, .skilled.warning, .skilled.alert, .projpar, .conicon, .contitle, .respar, .quora-icon{
+	visibility:hidden;
+}
+/* Visibility Hidden */
+
+/* Prevent FOUC */
+.no-js .top-bar {
+  display: none;
+}
+
+@media screen and (min-width: 40em) {
+  .no-js .top-bar {
+    display: block;
+  }
+
+  .no-js .title-bar {
+    display: none;
+  }
+}
+/* Prevent FOUC */
+.tac{
+	text-align:center;
+}
+p{
+	font-size:18px;
+}
+hr{
+	width:30%;
+	border:1px solid #FFC102;
+	margin:5px auto;
+}
+h4 small{
+	color:#ffffff;
+}
+body{
+	font-family: robotolight;
+}
+/* Menu */
+.top-bar{
+	position:fixed;
+	z-index:1;
+	width:100%;
+}
+.top-bar, .top-bar ul{
+	background-color: #FFAB00; 
+}
+.menu.vertical > li > a{
+	color:#000000;
+}
+.menu.vertical > li > a:hover{
+	color:#ffffff;
+	background-color: #008CFF;
+	border-radius:3px;
+}
+/* Menu */
+.row{
+	max-width: 100%;
+}
+/* Cover */
+.cover{
+	min-height:100%;
+	background: linear-gradient(150deg, rgba(0, 130, 255, 0.8), rgba(0, 130, 255, 0.8), rgba(0, 204, 0, 0.8), rgba(0, 204, 0, 0.8) ), url('http://res.cloudinary.com/billyhalim/image/upload/v1468989504/Billy%20Halim/cover.jpg') center center/cover no-repeat fixed;
+}
+.header-pic{
+	padding-top:15px; 
+	text-align: right;
+}
+h1.name{
+	font-weight:600;
+	font-size:4.5rem;
+	color: #ffffff;
+}
+.picture{
+	width:150px;
+	height:150px;
+	border-radius:50%;
+}
+.tagline{
+	font-size:1.4rem;
+	color: #ffffff;
+}
+/* Cover */
+
+/* Bio */
+.about{
+	font-size: 1.4rem;
+	color: #000000;
+	margin-bottom:1rem;
+}
+/* Bio */
+
+.title{
+	text-align: center;
+	margin: 15px 0px 5px;
+	color: #000000;
+}
+/* Education */
+.edu{
+	background-color:#0082FF;
+	margin-top:10px;
+	padding-bottom:20px;
+}
+.edupic{
+	width:160px;
+	height:160px;
+	margin:0 auto 10px;
+	display: block;
+}
+.schoolname{
+	font-size:1.6rem;
+}
+.edudet{
+	font-size:1.3rem;
+}
+/* Education */
+
+/* Skill */
+.skicon{
+	width:70px;
+	height:70px;
+	margin: 10px auto;
+	display:block;
+}
+.skilled{
+	padding:0px 0 10px;
+	border-radius:5px;
+	border-width:2px;
+	border-style:solid;
+	transition: background-color 0.2s linear;
+	margin-top:30px;
+}
+.skilled.primary{
+	border-color:#2199e8;
+}
+.skilled.primary:hover{
+	background-color:#CCEBFF;
+}
+.skilled.success{
+	border-color:#3adb76;
+}
+.skilled.success:hover{
+	background-color:#C1FFD8;
+}
+.skilled.warning{
+	border-color:#ffae00;
+}
+.skilled.warning:hover{
+	background-color:#FFE5AB;
+}
+.skilled.alert{
+	border-color:#ec5840;
+}
+.skilled.alert:hover{
+	background-color:#FFC2B9;
+}
+.label{
+	line-height:initial;
+	width:100%;
+	padding:1rem .5rem;
+	font-size:1.2rem;
+	border-top-left-radius:2px;
+	border-top-right-radius:2px;
+}
+.progress{
+	border-radius:0px;
+	height:1.8rem;
+	width:90%;
+	margin:0 auto 10px;
+}
+.progress-meter{
+	border-radius:0px;
+}
+.progress-meter-text{
+	font-size:1rem;
+}
+/* Skill */
+
+/* Project */
+.project{
+	background-color:#0082FF;
+	margin-top:20px;
+}
+.project a{
+	color:#ffffff;
+}
+.projpar{
+	padding-bottom:10px;
+}
+.projpar-img{
+	position:relative;
+}
+.projpar-img:hover .projcon-hover{
+	opacity:0.9;
+}
+.projcon-hover{
+	width:100%; 
+	height:230px; 
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	background-color:#000000;
+	opacity:0;
+	transition:opacity 0.2s linear;
+	padding-top:100px;
+}
+.projcon{
+	width:100%;
+	height:230px;
+	margin:0 auto 10px;
+}
+.projcon-full{
+	width:100%;
+	display:block;
+	margin:0 auto;
+}
+.reveal.full{
+	background:rgba(0, 0, 0, 0.7);
+}
+/* Project */
+
+/* Quote */
+.quotebar{
+	margin-top:15px;
+}
+.orbit{
+	width:100%;
+}
+.orbit-slide{
+	padding:150px 0px;
+	height:400px;
+}
+.quote{
+	font-style:italic;
+	font-size:25px;
+}
+.youtube{
+	width:100%;
+	height:700px;
+}
+/* Quote */
+
+/* Contact */
+.contact{
+	height:600px;
+	background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url('http://res.cloudinary.com/billyhalim/image/upload/v1468989504/Billy%20Halim/contact.jpg') top center/cover no-repeat;
+	text-align:center;
+}
+.contitle{
+	color:#ffffff;
+	font-size:20px;
+}
+.conicon{
+	font-size:50px;
+	color:#ffffff;
+}
+.quora-icon{
+	width:50px;
+	height:50px;
+}
+/* Contact */
+
+/* Copyright */
+.copyright{
+	text-align:center; 
+	color:#ffffff; 
+	background-color:#232323;
+}
+/* Copyright */
+
+@media (min-width:1024px) and (max-width:1199px){
+	.projcon{
+		height:200px;
+	}
+	.projcon-hover{
+		height:200px;
+		padding-top:80px;
+	}
+}
+@media (min-width:850px) and (max-width:1023px){
+	.projcon{
+		height:250px;
+	}
+	.projcon-hover{
+		height:250px;
+		padding-top:110px;
+	}
+}
+@media (min-width:640px) and (max-width:849px){
+	.projcon{
+		height:200px;
+	}
+	.projcon-hover{
+		height:200px;
+		padding-top:80px;
+	}
+}
+@media (min-width:640px) and (max-width:1023px){
+	h1.name{
+		font-size:3.5rem;
+	}
+	.tagline{
+		font-size:1.3rem;
+	}
+	.title{
+		font-size:25px;
+	}
+	.about{
+		font-size:1.3rem;
+	}
+	.edudet{
+		font-size:1.2rem;
+	}
+	.reveal.full{
+		padding-top:200px;
+	}
+	.youtube{
+		height:500px;
+	}
+	p{
+		font-size:17px;
+	}
+	.contact{
+		height:620px;
+	}
+}
+@media (max-width:639px){
+	h5{
+	   font-size:20px;
+	}
+	.top-bar{
+		position:absolute;
+	}
+	.header-pic{
+		padding-top:15px; 
+		text-align:center;
+	}
+	.header-title{
+		text-align:center;
+	}
+	h1.name{
+		font-size:3rem;
+	}
+	.tagline{
+		font-size:1.15rem;
+	}
+	.title{
+		font-size:25px;
+	}
+	.about{
+		font-size:1.2rem;
+	}
+	.edudet{
+		font-size:1.2rem;
+	}
+	.projcon, .projcon-hover{
+		width:100%;
+		margin:0 auto 10px;
+		display:block;
+		height:250px;
+	}
+	.projcon-hover{
+		padding-top:80px;
+	}
+	.reveal.full{
+		padding-top:200px;
+	}
+	.orbit-slide{
+		padding:100px 0px;
+	}
+	.youtube{
+		height:400px;
+	}
+	.contact{
+		height:1000px;
+	}
+}
